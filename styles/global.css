@@ -35,18 +35,38 @@ a {
 }
 
 .root {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 .theme-light .root {
   color: #000;
   background-color: #fff;
-  transition-duration: 500ms;
+  transition: color 500ms, background-color 500ms;
 }
 
 .theme-dark .root {
   color: #fff;
   background-color: #000;
-  transition-duration: 500ms;
+  transition: color 500ms, background-color 500ms;
+}
+
+.main-section {
+  min-height: 799px;
+}
+
+.default-link,
+.default-link:hover,
+.default-link:active,
+.default-link:visited {
+  color: #000;
+  transition: color 500ms, background-color 500ms;
+}
+
+.theme-dark .default-link,
+.theme-dark .default-link:hover,
+.theme-dark .default-link:active,
+.theme-dark .default-link:visited {
+  color: #fff;
+  transition: color 500ms, background-color 500ms;
 }

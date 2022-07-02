@@ -1,0 +1,84 @@
+/* ======================= Sections */
+
+.image-wrapper {
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid #000; */
+}
+
+.main-section-content-wrapper {
+  margin-top: 135px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-wrapper {
+  margin-left: 30px;
+}
+
+.buttons-wrapper {
+  display: flex;
+}
+/* ======================= Elements */
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  /* height: 480px; */
+}
+
+.hi-text {
+  margin-top: 36px;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.header {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-bottom: 38px;
+  max-width: 371px;
+  /* font-style: italic; */
+  font-weight: 300;
+}
+
+.circle-link {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+.circle-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.theme-dark .circle-link {
+  border-color: #fff;
+}
+
+.circle-link:hover {
+  background-color: transparent !important;
+  cursor: pointer;
+}
+
+.circle-link-component {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+/* ============================= */
