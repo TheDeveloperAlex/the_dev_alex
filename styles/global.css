@@ -16,3 +16,37 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+div {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.theme-light .root {
+  color: #000;
+  background-color: #fff;
+  transition-duration: 500ms;
+}
+
+.theme-dark .root {
+  color: #fff;
+  background-color: #000;
+  transition-duration: 500ms;
+}

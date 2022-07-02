@@ -1,0 +1,71 @@
+/* ======================== Blocks */
+.nav-bar {
+  display: flex;
+  padding-top: 26px;
+  margin-bottom: 26px;
+}
+
+.nav-bar-left-part {
+  display: flex;
+  margin-left: -8px;
+}
+
+.nav-bar-right-part {
+  display: flex;
+  margin-left: auto;
+  margin-right: -10px;
+}
+
+/* ======================== Element */
+
+.link-item {
+  line-height: 24px;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.link-item-delimiter {
+  height: 100%;
+  width: 1px;
+  border-right: 1px solid #000;
+}
+
+.nav-bar-button {
+  background: #0000ff;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.nav-bar-link-name-wrapper {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.nav-bar-link-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.nav-bar-link-job {
+  font-weight: 300;
+}
+
+/* .nav-bar-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-light .nav-bar-button svg {
+  fill: #000;
+}
+
+.theme-dark .nav-bar-button svg {
+  fill: #fff;
+} */
