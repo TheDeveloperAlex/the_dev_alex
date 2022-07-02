@@ -1,0 +1,26 @@
+{
+  "name": "the_dev_alex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDeveloperAlex/the_dev_alex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheDeveloperAlex/the_dev_alex/issues"
+  },
+  "homepage": "https://github.com/TheDeveloperAlex/the_dev_alex#readme",
+  "dependencies": {
+    "next": "^12.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
