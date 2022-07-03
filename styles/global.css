@@ -65,7 +65,7 @@ a {
 }
 
 .main-section {
-  min-height: 799px;
+  min-height: calc(100vh - 110px);
 }
 
 .default-link,
