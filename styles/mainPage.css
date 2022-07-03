@@ -6,7 +6,10 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  /* border: 1px solid #000; */
+}
+
+.buttons-wrapper {
+  display: flex;
 }
 
 .main-section-content-wrapper {
@@ -19,56 +22,94 @@
   margin-left: 30px;
 }
 
-.buttons-wrapper {
-  display: flex;
-}
 /* ======================= Elements */
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: translate(0px, 50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes circle-link {
+  from {
+    opacity: 0;
+    transform: translate(0px, 100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
 .image {
   width: 100%;
   object-fit: cover;
-  /* height: 480px; */
+  animation-duration: 1000ms;
+  animation-name: opacity;
 }
 
 .hi-text {
+  font-size: 100px;
   margin-top: 36px;
   margin-bottom: 24px;
   letter-spacing: -0.02em;
-  font-size: 100px;
   font-weight: 900;
+  animation-duration: 1000ms;
+  animation-name: opacity;
 }
 
 .header {
   font-size: 22px;
   margin-bottom: 5px;
+  animation-duration: 1000ms;
+  animation-name: opacity;
 }
 
 .description {
   margin-bottom: 38px;
   max-width: 371px;
-  /* font-style: italic; */
   font-weight: 300;
+  animation-duration: 1000ms;
+  animation-name: opacity;
 }
 
 .circle-link {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 1px solid #000;
+  height: 60px;
+  width: calc(100% / 2 - 20px);
+  border-radius: 5px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+  transition: color 500ms, background-color 500ms, border-color 500ms;
+
+  animation-duration: 1000ms;
+  animation-name: opacity;
+}
+
+.circle-link:hover {
+  border: 1px solid #262626;
+}
+
+.circle-link-second {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  animation-duration: 1300ms;
+  animation-name: opacity;
 }
 
 .circle-link:not(:last-child) {
   margin-right: 20px;
 }
 
-.theme-dark .circle-link {
-  border-color: #fff;
+.theme-dark .circle-link:hover {
+  border-color: #f5f5f5;
 }
 
 .circle-link:hover {
@@ -77,8 +118,19 @@
 }
 
 .circle-link-component {
-  font-size: 22px;
-  font-weight: 900;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 18px 40px;
+  color: #f5f5f5;
+}
+
+.theme-light .circle-link .circle-link-component {
+  color: #f5f5f5;
+}
+
+.theme-light .circle-link:hover .circle-link-component {
+  color: black;
 }
 
 /* ============================= */

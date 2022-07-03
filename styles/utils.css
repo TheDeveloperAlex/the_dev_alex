@@ -1,0 +1,6 @@
+.background-theme {
+  background-color: #f5f5f5;
+}
+.theme-dark .background-theme {
+  background-color: #262626;
+}

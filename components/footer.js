@@ -35,7 +35,7 @@ export default function Footer({ theme }) {
   })
 
   return (
-    <div>
+    <div >
       <div className="delimiter" ></div>
       <div className="contact-wrapper" >
         <div>

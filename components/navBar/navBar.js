@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import CustomLink from "./link";
 import LogoReact from "./logoReact";
@@ -5,15 +6,22 @@ import LogoReact from "./logoReact";
 export default function NavBar({ theme, setTheme }) {
 
 
-  
+  // ==========================================================
   const onChangeTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
+      if (typeof window !== "undefined") {
+        localStorage.setItem('theme', 'dark');
+      }
       return;
     }
     setTheme('light');
+    if (typeof window !== "undefined") {
+      localStorage.setItem('theme', 'light');
+    }
   }
-
+  // ==========================================================
+  
   const linksData = [
     {content: 'Projects', href: '/projects', isLinkWeb: false},
     {content: 'Contact', href: 'mailto: semenenkoalex688@gmail.com', isLinkWeb: true},
@@ -44,12 +52,10 @@ export default function NavBar({ theme, setTheme }) {
 
   // ===========================================================================
   
-
   return (
     <div className="nav-bar" >
       <div className="nav-bar-left-part">
         <button className="nav-bar-button" onClick={onChangeTheme} >
-          {/* {buttonIcon} */}
           <div className="logo-react-wrapper" > 
             
           </div>

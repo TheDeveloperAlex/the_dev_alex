@@ -7,27 +7,28 @@ export default function Index() {
   
   const linksData = [
     { content: 'Projects', color: '#385df2', href: '/projects', isLinkWeb: false  },
-    { content: 'Github', color: '#EEA302', href: 'https://github.com/TheDeveloperAlex/', isLinkWeb: true  },
-    // { content: 'Github', color: '#EEA302', href: 'https://github.com/TheDeveloperAlex/', isLinkWeb: true  },
+    { content: 'Github', color: '#80D8Da', href: 'https://github.com/TheDeveloperAlex/', isLinkWeb: true  },
   ];
+
+  const onClick = (href) => {
+      window.location.href = href;
+  }
 
   const linkItems = linksData.map(({ content, color, href, isLinkWeb }) => {
     return isLinkWeb ? (
-      <a className='default-link' key={href} href={href}>
-        <div className='circle-link' style={{ background: color }} >
+      <button key={`${color}${href}`} onClick={() => onClick(href)} className='circle-link circle-link-second' style={{ background: color }} >
           <div className='circle-link-component' >
             {content}
           </div>
-        </div>
-      </a>
+        </button>
     ) : (
-      <div className='circle-link' key={href} style={{ background: color }} >
-        <Link href={href}>
+        <div className='circle-link' style={{ background: color }} key={href}>
+        <Link href={href}  >
           <div className='circle-link-component' >
             {content}
           </div>
         </Link>
-      </div>
+        </div>
     )
   })
 

@@ -1,4 +1,4 @@
-import styles from '../styles/logoReact.module.scss';
+import styles from '../../styles/logoReact.module.scss';
 
 export default function LogoReact() {
 
