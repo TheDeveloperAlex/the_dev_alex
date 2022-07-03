@@ -42,7 +42,7 @@ export default function Index() {
           <div className='hi-text' >Hello</div>
           <h1 className='header' >A Bit About Me</h1>
           <div className='description' >
-            I'm 17 years old. I am a front-end web developer at Resonance. I love sports and wildlife.
+            I'm 17 years old. I am a react developer at Resonance. I love sports and wildlife.
           </div>
           <div className='buttons-wrapper' >
             {linkItems}
