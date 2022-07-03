@@ -13,7 +13,7 @@ export default function Index() {
 
   const linkItems = linksData.map(({ content, color, href, isLinkWeb }) => {
     return isLinkWeb ? (
-      <a className='default-link' href={href}>
+      <a className='default-link' key={href} href={href}>
         <div className='circle-link' style={{ background: color }} >
           <div className='circle-link-component' >
             {content}
@@ -21,7 +21,7 @@ export default function Index() {
         </div>
       </a>
     ) : (
-      <div className='circle-link' style={{ background: color }} >
+      <div className='circle-link' key={href} style={{ background: color }} >
         <Link href={href}>
           <div className='circle-link-component' >
             {content}

@@ -10,7 +10,7 @@
 }
 
 .main-section-content-wrapper {
-  margin-top: 135px;
+  padding-top: 135px;
   display: flex;
   justify-content: center;
 }

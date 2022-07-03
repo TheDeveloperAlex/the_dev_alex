@@ -1,0 +1,38 @@
+/* ================= Blocks */
+.contact-wrapper {
+  display: flex;
+  max-width: 851px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.social-networks-collection {
+  display: flex;
+}
+
+/* ================= Elements */
+.delimiter {
+  margin: 10px 40px 26px 40px;
+  border-top: 1px solid #000;
+}
+
+.theme-dark .delimiter {
+  border-color: #fff;
+}
+
+.contact-headers {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact-email {
+  font-weight: 300;
+}
+
+.social-networks-items {
+  padding: 5px;
+}
+
+.social-networks-items:not(:last-child) {
+  padding-right: 5px;
+}
