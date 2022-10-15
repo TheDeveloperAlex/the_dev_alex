@@ -62,7 +62,7 @@ export default function NavBar({ theme, setTheme }) {
         </button>
         <Link href={'/'} >
           <div className="nav-bar-link-name-wrapper" >
-            <span className="nav-bar-link-name" >Oleksandr Semenenko</span>
+            <span className="nav-bar-link-name" >Alex Semenenko</span>
             <span className="nav-bar-link-job" ><span style={{ marginRight: '5px' }} >React</span> <LogoReact /> <span style={{ marginLeft: '5px' }} >Developer</span></span>
           </div>
         </Link>
