@@ -1,7 +1,7 @@
 import ProjectSectionItem from '../components/projects/sectionItem';
-import donutMaster from '../images/donutMaster.jpeg';
-import shopFuture from '../images/shopFuture.jpeg';
-import taskManeger from '../images/taskManeger.jpeg';
+import donutMaster from '../public/donutMaster.jpeg';
+import shopFuture from '../public/shopFuture.jpeg';
+import taskManeger from '../public/taskManeger.jpeg';
 
 export default function Projects() {
   

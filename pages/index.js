@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import moment from 'moment';
 
-import photo from '../images/me.jpeg';
+import myPhoto from '../public/me.jpg'
 
 export default function Index() {
 
@@ -61,13 +61,13 @@ export default function Index() {
       </Head>
       <div className='main-section-content-wrapper' >
         <div className='image-wrapper'>
-          <Image src={photo} layout="fill" className='image' />
+          <Image src={myPhoto} layout="fill" className='image' />
         </div>
         <div className='text-wrapper' >
           <div className='hi-text' >Hello</div>
           <h1 className='header' >A Bit About Me</h1>
           <div className='description' >
-            I'm {`${ age }`} years old. I am a react developer at Resonance. I love sports and wildlife.
+            I'm {`${age}`} years old. I am a react developer at Resonance. I love sports and wildlife.
           </div>
           <div className='buttons-wrapper' >
             {linkItems}
