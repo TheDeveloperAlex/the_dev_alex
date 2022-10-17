@@ -2,11 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import moment from 'moment';
-
 import myPhoto from '../public/me.jpg'
+import { getAge } from '../components/helpers';
 
-export default function Index() {
+function Index({ age }) {
 
   const linksData = [
     { content: 'Projects', color: '#385df2', href: '/projects', isLinkWeb: false },
@@ -35,24 +34,6 @@ export default function Index() {
     )
   })
 
-  // =====================================
-
-  let age = 0;
-
-  const birth = [24, 1, 2005];
-
-  const curYear = moment().year();
-  const curMont = moment().month();
-  const curDay = moment().date();
-
-  if (curMont >= birth[1] || (curMont === birth[1] && curDay >= birth[0])) {
-    age = curYear - birth[2];
-  } else {
-    age = curYear - birth[2] - 1;
-  }
-  // =====================================
-
-
   return (
     <div className="main-section" >
       <Head>
@@ -77,3 +58,16 @@ export default function Index() {
     </div>
   );
 }
+
+export async function getStaticProps() {
+  const age = getAge();
+
+  return {
+    props: {
+      age,
+    },
+  };
+  
+}
+
+export default Index;
